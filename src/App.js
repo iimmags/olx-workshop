@@ -1,47 +1,23 @@
-import "./App.css";
-import PostingForm from "./components/PostingForm/PostingForm";
-import { useEffect, useState } from "react";
-import Ads from "./components/Ads/Ads";
-import config from "./config";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-  const [ads, setAds] = useState([]);
-
-  useEffect(() => {
-    fetchAllAds();
-  }, []);
-
-  const fetchAllAds = () => {
-    fetch(config.api_ads)
-      .then((res) => res.json())
-      .then((response) => setAds(response.data))
-      .catch((err) => console.error(err));
-  };
-
-  const handleOnPostAd = () => {
-    fetchAllAds();
-  };
-
-  const handleOnDelete = (adId) => {
-    if (!adId) {
-      return;
-    }
-    fetch(`${config.api_ads}/${adId}`, { method: "DELETE" })
-      .then((res) => res.json())
-      .then((response) => fetchAllAds())
-      .catch((err) => console.error(err));
-  };
-
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Mini OLX</h1>
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
       </header>
-      <main>
-        <PostingForm onPostAd={handleOnPostAd} />
-        <hr />
-        <Ads ads={ads} onDeleteAd={handleOnDelete} />
-      </main>
     </div>
   );
 }
