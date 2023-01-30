@@ -1,9 +1,9 @@
-# OLX Women Workshop - Frontend
+# OLX Women Workshop - Frontend - 2023
 
 ## Requirements
 
 - [Node v17+](https://nodejs.org/en/)
-- NPM v6.14+ (Automatically installed with Node)
+- NPM v8.5+ (Automatically installed with Node)
 - [Docker (Desktop for Mac/Windows, Engine for Linux)](https://www.docker.com/get-started)
 - Your terminal of choice
 - Your favorite text editor, we recommend [VS Code](https://code.visualstudio.com) for this workshop
