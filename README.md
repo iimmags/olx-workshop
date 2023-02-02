@@ -1,4 +1,4 @@
-# OLX Women Workshop - Frontend - 2023
+# OLX Women Workshop - Frontend
 
 ## Requirements
 
