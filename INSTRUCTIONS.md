@@ -190,7 +190,7 @@ docker-compose up
 
 Wait for the dependencies to load and your page should be looking something like this:
 
-![](docs/images/02-page-cleanup.png)
+![](/mini-olx-frontend/docs/images/02-page-cleanup.png)
 
 ## Posting Form
 
@@ -319,7 +319,7 @@ function App() {
 
 Now it should be looking something like this 👇. Try posting some ads!
 
-![](docs/images/03-posting-form.png)
+![](/mini-olx-frontend/docs/images/03-posting-form.png)
 
 ## Ads listing
 
@@ -553,7 +553,7 @@ function App() {
 
 Now your page should be looking something like this and is fully functional!
 
-![](docs/images/04-ads.png)
+![](/mini-olx-frontend/docs/images/04-ads.png)
 
 If you've reached here, congratulations! You have a working single-page application! 🎉
 
@@ -773,7 +773,7 @@ const PostingForm = ({ onPostAd = () => {} }) => {
 
 Now your Posting Form should be looking like this:
 
-![](docs/images/05-posting-form-pretty.png)
+![](/mini-olx-frontend/docs/images/05-posting-form-pretty.png)
 
 ## Listing Layout
 
@@ -860,7 +860,7 @@ const Ads = ({ ads = [], onDeleteAd = () => {} }) => {
 
 After all these changes, your page should be looking beautiful! ✨
 
-![](docs/images/06-final-page.png)
+![](/mini-olx-frontend/docs/images/06-final-page.png)
 
 ---
 
